@@ -18,7 +18,7 @@ function togglePopup3() {
 
 function changeBg() {
   let bg = document.getElementById("bg");
-  bg.src = "/assets/bg.png";
+  bg.src = "../assets/bg.png";
   document.getElementById("radioxx").setAttribute("class", "showmodal");
   document.getElementById("radioyy").setAttribute("class", "showmodal2");
 }
@@ -44,7 +44,7 @@ function changeroom() {
   document.getElementById("radioxx").setAttribute("class", "style1");
   document.getElementById("radioyy").setAttribute("class", "radioyy");
   let bg = document.getElementById("bg");
-  bg.src = "/assets/bg2.jpg";
+  bg.src = "../assets/bg2.jpg";
 }
 
 function togglePopupresp2() {
