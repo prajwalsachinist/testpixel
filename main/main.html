@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="//db.onlinewebfonts.com/c/62c312b81b9d45f73effa3e5ea9bd94e?family=VAG+Rundschrift" rel="stylesheet"
+    type="text/css" />
+</head>
+
+<div class="main">
+  <img src="/assets/bg.png" class="bg" id="bg">
+</div>
+
+
+
+<div class="submenu">
+  <div class="subsub">
+    <img src="/assets/save.png" class="saveimg">
+  </div>
+  <div class="subsub">
+    <img src="/assets/print.png" class="saveimg">
+  </div>
+  <div class="subsub">
+    <img src="/assets/download.png" class="saveimg">
+  </div>
+  <div class="subsub">
+    <img src="/assets/share.png" class="saveimg">
+  </div>
+</div>
+
+<div id="headernavigation" class="headernavigation">
+  <div id="container" class="container">
+    <div class="resplogo">
+      <img src="/assets/logo.png" class="resplogoimg">
+    </div>
+    <div id="content" class="content">
+      <img id="vjlogov11" class="vjlogov11" src="/assets/logo.png" />
+
+      <div id="navigation2" class="navigation2">
+        <button id="_navitembase" class="_navitembase">
+          <div id="content2" class="content2">
+            <div id="text" class="text selected" style="color: #007A89;">Kingsmews Plot 14</div>
+          </div>
+        </button>
+
+        <div class="dropdown">
+          <div class="select" style="border-left: 1px solid #b7b7b7; border-right: 1px solid #b7b7b7;">
+            <span class="selected text">Select room</span>
+            <img src="/assets/downarrow.png" class="downarrow">
+          </div>
+          <ul class="menu text">
+            <li onclick="changeBg()" style="font-size: 12px; font-weight: 500;">Hall & stairs</li>
+            <li onclick="changeroom()" style="font-size: 12px; font-weight: 500;">Lounge</li>
+          </ul>
+        </div>
+
+        <div class="roommain" id="roommain">
+          <div class="r1">
+            <p>Room totals</p>
+          </div>
+          <div class="r2">
+            <div class="r2sub">
+              <p class="r2sub1">Kitchen</p>
+              <p class="r2sub2">£2500</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bathroom</p>
+              <p class="r2sub2">£750</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Ensuite</p>
+              <p class="r2sub2">£650</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Livingroom</p>
+              <p class="r2sub2">£200</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bedroom 1</p>
+              <p class="r2sub2">£60</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bedroom 2</p>
+              <p class="r2sub2">£350</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bedroom 3</p>
+              <p class="r2sub2">£350</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bedroom 4</p>
+              <p class="r2sub2">£350</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Bedroom 5</p>
+              <p class="r2sub2">£350</p>
+            </div>
+            <div class="r2sub">
+              <p class="r2sub1">Additional options</p>
+              <p class="r2sub2">£350</p>
+            </div>
+            <div class="r2sub">
+              <div class="r2sub1">
+                <p>Carpets</p>
+                <p class="wholehouse">(whole house)</p>
+              </div>
+              <p class="r2sub2">£1800</p>
+            </div>
+          </div>
+          <div class="r3">
+            <p class="r3p1">Grand Total:</p>
+            <p class="r3p2">£6,400</p>
+          </div>
+          <div class="r4">
+            <p>VIEW HOUSE OPTIONS</p>
+          </div>
+        </div>
+
+        <div class="roomselect" id="roomselect">
+          <div class="r1">
+            <p>Hall & Stair selections</p>
+          </div>
+          <div class="r2">
+            <div class="r2sub">
+              <p class="r2sub1">Vinyl flooring</p>
+              <p class="r2sub2">£950</p>
+            </div>
+          </div>
+          <div class="r3">
+            <p class="r3p1">Total:</p>
+            <p class="r3p2">£950</p>
+          </div>
+          <div class="r4">
+            <p>REVIEW & CONFIRM</p>
+          </div>
+        </div>
+
+        <div class="infomodal" id="infomodal">
+          <div class="infomodal1">
+            <div class="infomodal11">
+              <p class="infomodalt1">Carpet Choices</p>
+              <p class="infomodalt2">Cut Off Date: 28/12/18</p>
+            </div>
+            <div class="infomodal12" onclick="togglePopup3()">
+              <img src="/assets/close.png" class="infomodalclose">
+            </div>
+          </div>
+          <div class="infomodal2">
+            <div class="infomodal21">
+              <p>Selected</p>
+            </div>
+            <div class="infomodal22">
+              <div class="infomodalsub221">
+                <p class="infomodalsub221t">SWATCH</p>
+              </div>
+              <div class="infomodal222">
+                <p class="infomodal222t1">Barcelona D522</p>
+                <p class="infomodal222t2">Marbella Range</p>
+                <p class="infomodal222t3">Midnight collection</p>
+              </div>
+            </div>
+            <div class="infomodal23">
+              <p class="infomodal23t1">Whole house total: </p>
+              <p class="infomodal23t2">£ 1800</p>
+            </div>
+          </div>
+          <div class="infomodal3">
+            <div class="infomodal31">
+              <div class="infomodal311">Standard</div>
+              <div class="infomodal312">Upgrades</div>
+            </div>
+            <div class="infomodal32">Marbella - Wood patterns</div>
+            <div class="infomodal4">
+              <div class="infomodal41">
+                <div class="infomodal411">SWATCH</div>
+                <div class="infomodal412">SWATCH</div>
+                <div class="infomodal413">SWATCH</div>
+              </div>
+              <div class="infomodal42">
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+              </div>
+              <div class="infomodal41">
+                <div class="infomodal411">SWATCH</div>
+                <div class="infomodal412">SWATCH</div>
+                <div class="infomodal413">SWATCH</div>
+              </div>
+              <div class="infomodal42">
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+              </div>
+              <div class="infomodal41">
+                <div class="infomodal411">SWATCH</div>
+                <div class="infomodal412">SWATCH</div>
+                <div class="infomodal413">SWATCH</div>
+              </div>
+              <div class="infomodal42">
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+                <div class="infomodal421">
+                  <p>Bolivia</p>
+                  <p>502</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="infomodal5" onclick="togglePopup3()">
+            <div class="infomodal51">&lt;</div>
+            <div class="infomodal52">BACK TO ROOM</div>
+          </div>
+        </div>
+
+
+
+        <button id="_navitembase2" class="_navitembase xyz1">
+          <div id="content3" class="content3">
+            <div id="text2" class="text selected">Selected options</div>
+            <img src="/assets/rightarrow.png" class="rightarrow">
+          </div>
+        </button>
+      </div>
+    </div>
+    <div id="content4" class="content4">
+      <button id="_navitembase2" class="_navitembase" style="padding-right: 0;">
+        <div id="textz" class="textz">(Reset room selections)</div>
+        <div id="content3" class="content3x xyz2" onclick="showDrop()" style="padding: 0 10px;">
+          <div class="textxy">
+            <p id="textx" class="textx">Room Totals</p>
+            <p id="texty" class="texty">£0</p>
+          </div>
+          <img src="/assets/downarrow.png" class="downarrow">
+        </div>
+        <div id="content3" class="content3x" onclick="showDrop2()" style="padding-left: 13px;">
+          <div class="textxy">
+            <div id="textx" class="textx">Selections</div>
+            <div id="texty" class="texty">£0</div>
+          </div>
+          <img src="/assets/downarrow.png" class="downarrow">
+        </div>
+      </button>
+      <div id="dropdown3" class="dropdown" style="border-left: 1px solid #b7b7b7; padding: 0 10px;">
+        <img id="avatar" class="avatar" src="/assets/que.png" />
+      </div>
+      <div id="dropdown3" class="dropdown" style="border-left: 1px solid #b7b7b7; padding: 0 10px;">
+        <img id="avatar" class="avatar" src="/assets/close.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal">
+  <div class="overlay"></div>
+  <div class="overcontent">
+    <div class="close-btn" onclick="togglePopup2()">&times;</div>
+    <h1 class="modalhead">Whole House Carpet Selection</h1>
+    <p class="modaltext">Your carpet selection will be applied to all carpeted rooms, the price shown indicates the
+      total price for all carpeted rooms. Additional vinyl flooring options are available in the lounge and hall, if
+      selected your carpet total will be adjusted.</p>
+    <button class="modalbutton" onclick="togglePopup2()">Continue to carpet selection</button>
+    <div class="modallast" onclick="togglePopup()">
+      <img src="/assets/leftarrow.png" class="leftarrowmodal">
+      <p class="modallasttext">or return to "Hall & Stair”</p>
+    </div>
+  </div>
+</div>
+<div class="showmodal" onclick="togglePopup()" id="radioxx">
+  <input type="radio" class="radio" id="radio" value="radio" checked>Carpets
+</div>
+<div class="showmodal2" id="radioyy">
+  <input type="radio" class="radio" id="radio" value="radio" checked>Vinyl & Tile Flooring
+</div>
+
+<div class="respdiv">
+  <div class="respdiv1" onclick="togglePopupresp()">
+    <p>Carpets</p>
+    <img src="/assets/rightarrow.png" height="13px">
+  </div>
+  <div class="infomodal" id="infomodalresp">
+    <div class="infomodal1">
+      <div class="infomodal11">
+        <p class="infomodalt1">Carpet Choices</p>
+        <p class="infomodalt2">Cut Off Date: 28/12/18</p>
+      </div>
+      <div class="infomodal12" onclick="togglePopupresp2()">
+        <img src="/assets/close.png" class="infomodalclose">
+      </div>
+    </div>
+    <div class="infomodal2">
+      <div class="infomodal21">
+        <p>Selected</p>
+      </div>
+      <div class="infomodal22">
+        <div class="infomodalsub221">
+          <p class="infomodalsub221t">SWATCH</p>
+        </div>
+        <div class="infomodal222">
+          <p class="infomodal222t1">Barcelona D522</p>
+          <p class="infomodal222t2">Marbella Range</p>
+          <p class="infomodal222t3">Midnight collection</p>
+        </div>
+      </div>
+      <div class="infomodal23">
+        <p class="infomodal23t1">Whole house total: </p>
+        <p class="infomodal23t2">£ 1800</p>
+      </div>
+    </div>
+    <div class="infomodal3">
+      <div class="infomodal31">
+        <div class="infomodal311">Standard</div>
+        <div class="infomodal312">Upgrades</div>
+      </div>
+      <div class="infomodal32">Marbella - Wood patterns</div>
+      <div class="infomodal4">
+        <div class="infomodal41">
+          <div class="infomodal411">SWATCH</div>
+          <div class="infomodal412">SWATCH</div>
+          <div class="infomodal413">SWATCH</div>
+        </div>
+        <div class="infomodal42">
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+        </div>
+        <div class="infomodal41">
+          <div class="infomodal411">SWATCH</div>
+          <div class="infomodal412">SWATCH</div>
+          <div class="infomodal413">SWATCH</div>
+        </div>
+        <div class="infomodal42">
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+        </div>
+        <div class="infomodal41">
+          <div class="infomodal411">SWATCH</div>
+          <div class="infomodal412">SWATCH</div>
+          <div class="infomodal413">SWATCH</div>
+        </div>
+        <div class="infomodal42">
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+          <div class="infomodal421">
+            <p>Bolivia</p>
+            <p>502</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="infomodal5" onclick="togglePopup3()">
+          <div class="infomodal51">&lt;</div>
+          <div class="infomodal52">BACK TO ROOM</div>
+        </div> -->
+  </div>
+  <div class="respdiv1">
+    <p>Vinyl & Tile Flooring</p>
+    <img src="/assets/rightarrow.png" height="13px">
+  </div>
+  <div class="respdiv1">
+    <p>Electrical Items</p>
+    <img src="/assets/rightarrow.png" height="13px">
+  </div>
+  <div class="respdiv1">
+    <p>Switches</p>
+    <img src="/assets/rightarrow.png" height="13px">
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
